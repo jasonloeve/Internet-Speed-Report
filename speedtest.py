@@ -69,7 +69,10 @@ db.close()
 # Email Results to ISP
 # Send email if internet speed is less than 50Mbs
 
-if float(d) < float(50): # Convert to float for condition
+intd 	 = int(float(d))
+setvalue = int(float('50')) # if lower than 50Mbps then email
+
+if intd > setvalue : 
 
 	# Setup email
 
